@@ -20,7 +20,7 @@ from ultralytics.utils.checks import cv2, print_args
 from utils.general import update_options
 
 # Initialize paths
-ÍFILE = Path(__file__).resolve() # 현재 파일의 절대 경로 저장 
+FILE = Path(__file__).resolve() # 현재 파일의 절대 경로 저장 
 ROOT = FILE.parents[0] # 현재 파일의 부모 디렉토리를 저장. parents[0]는 현재 파일이 속한 디렉토리를 의미 
 if str(ROOT) not in sys.path:
     sys.path.append(str(ROOT))

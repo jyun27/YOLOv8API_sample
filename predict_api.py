@@ -124,7 +124,7 @@ if __name__ == '__main__':
     # Flask 애플리케이션을 실행될 때 사용되는 input parameter을 설명하는 부분 
     # 여러 개의 인수를 추가하여 사용자로부터 다양한 입력을 받을 수 있도록 한다. 
     parser = argparse.ArgumentParser()
-    parser.add_argument('--model','--weights', type=str, default=ROOT / '/Users/kimjyun/Desktop/2024/SeoulReChat/cloneCode/YOLOv8API/best.pt', help='model path or triton URL')
+    parser.add_argument('--model','--weights', type=str, default=ROOT / 'best.pt', help='model path or triton URL')
     parser.add_argument('--source', type=str, default=ROOT / 'data/images', help='source directory for images or videos')
     parser.add_argument('--conf','--conf-thres', type=float, default=0.25, help='object confidence threshold for detection')
     parser.add_argument('--iou', '--iou-thres', type=float, default=0.7, help='intersection over union (IoU) threshold for NMS')
